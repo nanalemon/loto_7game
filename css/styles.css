@@ -135,6 +135,7 @@ p span{
   }
   p.sub {
     display: block;
+    margin-top: 30px;
   }
   p.none {
     display: none;
@@ -162,6 +163,6 @@ p span{
   p.msg {
     position: absolute;
     left: 20px;
-    top: -500px;
+    top: -300px;
   }
 } 
