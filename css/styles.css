@@ -21,7 +21,7 @@ html{
   background: #e91e6317;
 }
 body {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .container{
   position: relative;
@@ -53,6 +53,7 @@ p span{
 }
 .square04 {
   margin-left: 80px;
+  margin-bottom: 30px;
 }
 
 @media (min-width:600px){
