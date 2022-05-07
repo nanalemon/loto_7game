@@ -5,11 +5,11 @@ img{
   object-fit: cover;
 }
 
-#btn,#btn02,#btn03{
+#btn,#btn02,#btn03,#btn04{
   width: 200px;
   height: 200px;
   background: #32b0a573;
-  border-radius: 30px;
+  border-radius: 50%;
   margin-top: 40px;
   font-family: 'Righteous', cursive;
   text-align: center;
@@ -20,6 +20,9 @@ img{
 html{
   background: #e91e6317;
 }
+body {
+  padding-bottom: 50px;
+}
 .container{
   position: relative;
 }
@@ -29,17 +32,27 @@ html{
   height: 50px;
   border-radius: 10px;
   background: #32b0a573;
-  top: -70px;
+  top: -40px;
   right: 90px;
 }
-p{
+.wrap {
+  display: flex;
+}
+p.txt {
+  font-family: 'Yomogi', cursive;
+  margin: 100px 30px 0;
+}
+p.msg{
   text-align: center;
 }
 p span{
   font-weight: bold;
 }
-.square02,.square03{
-  display: none;
+.square02 {
+  order: 1;
+}
+.square04 {
+  margin-left: 80px;
 }
 
 @media (min-width:600px){
@@ -66,9 +79,6 @@ p span{
   .square{
     display: none;
   }
-  .square02,.square03{
-    display: block;
-  }
   #btn02.square02{
     position: absolute;
     top: -800px;
@@ -88,5 +98,18 @@ p span{
     border-radius: 50%;
     font-size: 2rem;
     line-height: 200px;
+  }
+  #btn04.square04{
+    position: absolute;
+    top: -600px;
+    right: 100px;
+    padding: 0;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 200px;
+  }
+  p.txt {
+    display: none;
   }
 }
